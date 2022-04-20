@@ -197,12 +197,16 @@
 
 
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/04/20/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-04-20T13:06:30.635Z" itemprop="datePublished">2022-04-20</time>
+    <a href="/2022/02/11/1/" class="article-date">
+  <time class="dt-published" datetime="2022-02-11T14:00:00.000Z" itemprop="datePublished">2022-02-11</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -211,7 +215,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/20/hello-world/">Hello World</a>
+      <a class="p-name article-title" href="/2022/02/11/1/">寒假自学</a>
     </h1>
   
 
@@ -219,24 +223,199 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>计算机由五个部分组成（运算器、控制器、存储器、输入设备、输出设备）</p>
+<p><img src="C:\Users\16149\AppData\Roaming\Typora\typora-user-images\image-20220419214714635.png" alt="image-20220419214714635"></p>
+<h3 id="二进制转十进制"><a href="#二进制转十进制" class="headerlink" title="二进制转十进制"></a>二进制转十进制</h3><p><img src="C:\Users\16149\AppData\Roaming\Typora\typora-user-images\image-20220419215906008.png" alt="image-20220419215906008"></p>
+<h3 id="二进制转八进制"><a href="#二进制转八进制" class="headerlink" title="二进制转八进制"></a>二进制转八进制</h3><p>10001111</p>
+<p> 每3位为一组用一位八进制数的数字表示，不足3位的要用“0”补足3位，就得到一个八进制数。</p>
+<p>010  000  111</p>
+<p>2       1       7</p>
+<h3 id="二进制转十六进制"><a href="#二进制转十六进制" class="headerlink" title="二进制转十六进制"></a>二进制转十六进制</h3><p>10001111</p>
+<p>每4位为一组用一位十六进制数的数字表示，不足4位的要用“0”补足4位，就得到一个十六进制数。</p>
+<p>1000       1111</p>
+<p>8                 F</p>
+<h1 id="c语言基础"><a href="#c语言基础" class="headerlink" title="c语言基础"></a>c语言基础</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">占字节大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">int(整数)</td>
+<td align="center">4个字节</td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">2个字节</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">4个字节</td>
+</tr>
+<tr>
+<td align="center">char(字符)</td>
+<td align="center">1个字节</td>
+</tr>
+<tr>
+<td align="center">float(浮点型)</td>
+<td align="center">2个字节</td>
+</tr>
+</tbody></table>
+<h2 id="起名标识符"><a href="#起名标识符" class="headerlink" title="起名标识符"></a>起名标识符</h2><ul>
+<li><p>标识符只能以英文大小写字母、和下划线(_)开头,而不能用其他任何字符或数字开头。</p>
+</li>
+<li><p>标识符中只能包含英文大小写字母、下划线和阿拉伯数字,但是不能以阿拉伯数字开头。</p>
+</li>
+<li><p>标识符区分大小写</p>
+</li>
+<li><p>标识符不能是关键字。 int float;&#x2F;&#x2F;错误,float是关键字</p>
+</li>
+</ul>
+<h2 id="圆周长面积"><a href="#圆周长面积" class="headerlink" title="圆周长面积"></a>圆周长面积</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PI 3.14159</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">double</span> r, s, c;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%lf&quot;</span>,&amp;r);<span class="comment">//输入半径。</span></span><br><span class="line">    s=PI*r*r;<span class="comment">//计算面积。 </span></span><br><span class="line">    c=<span class="number">2</span>*PI*r;<span class="comment">//计算周长</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;面积=%lf 周长=%lf\n&quot;</span>, s,c);<span class="comment">//输出结果</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/20/hello-world/" data-id="cl27laf9i0000egwa0xxn4z9i" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/11/1/" data-id="cl27mjjak0000sowackhzgb1m" data-title="寒假自学" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-blog(1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/11/blog(1)/" class="article-date">
+  <time class="dt-published" datetime="2022-02-11T14:00:00.000Z" itemprop="datePublished">2022-02-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/02/11/blog(1)/">寒假自学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="下载必要的程序"><a href="#下载必要的程序" class="headerlink" title="下载必要的程序"></a>下载必要的程序</h2><h3 id="node-js下载"><a href="#node-js下载" class="headerlink" title="node.js下载"></a>node.js下载</h3><p><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/xxfZAH9ZY1j">https://www.aliyundrive.com/s/xxfZAH9ZY1j</a></p>
+<h3 id="git下载"><a href="#git下载" class="headerlink" title="git下载"></a>git下载</h3><p><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/zNafiruPAfx">https://www.aliyundrive.com/s/zNafiruPAfx</a></p>
+<h3 id="hexo-下载"><a href="#hexo-下载" class="headerlink" title="hexo 下载"></a>hexo 下载</h3><p>npm install hexo-cli -g</p>
+<p>hexo -v</p>
+<h2 id="github环境配置"><a href="#github环境配置" class="headerlink" title="github环境配置"></a>github环境配置</h2><h3 id="账号注册"><a href="#账号注册" class="headerlink" title="账号注册"></a>账号注册</h3><ul>
+<li><img src="C:\Users\nianchu\AppData\Roaming\Typora\typora-user-images\image-20220420104359802.png" alt="image-20220420104359802"></li>
+<li>然后就登录邮箱查看 验证码 输入进去</li>
+<li></li>
+<li>选择free就好了</li>
+</ul>
+<h3 id="创建仓库-repository"><a href="#创建仓库-repository" class="headerlink" title="创建仓库(repository)"></a>创建仓库(repository)</h3><p>owner 不用改   然后Repository 就该你owner名字 +github.io</p>
+<p>例如我创建的名字叫SafeMoon1025</p>
+<p>Repository name &#x3D; SafeMoon1025.github.io</p>
+<ul>
+<li>选public</li>
+<li>勾选Add a README file </li>
+<li>然后直接Create repository就ok了</li>
+</ul>
+<h3 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h3><ul>
+<li><p>在D盘新建文件夹(blog) </p>
+</li>
+<li><p>点进去 右键   Git Bash Here</p>
+</li>
+<li><p>ssh-keygen -t rsa -C “邮件地址”</p>
+</li>
+<li><p>然后慢慢按三次回车</p>
+</li>
+<li><p>返回github网页点右上角的头像 按setting</p>
+</li>
+<li><p>SSH and GPG keys    new SSH keys</p>
+</li>
+<li><p>然后就去C:\User\Adminisrator.ssh  找到id_rsa.pub 用记事本打开</p>
+</li>
+<li><p>Title: blog   key: 直接复制粘贴  然后add keys</p>
+</li>
+<li><p>然后去test </p>
+</li>
+<li><p>ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a></p>
+</li>
+</ul>
+<h3 id="启动博客"><a href="#启动博客" class="headerlink" title="启动博客"></a>启动博客</h3><ul>
+<li><p>打开blog文件夹</p>
+</li>
+<li><p>右键Git Bash Here</p>
+<ul>
+<li>hexo init</li>
+<li>hexo g</li>
+<li>hexo s</li>
+</ul>
+</li>
+<li><p>给config.yml配置文件</p>
+<ul>
+<li><pre><code>deploy:
+  type:git
+  repository:https://github.com/SafeMoon1025/SafeMoon1025.github.io
+  branch:main
+</code></pre>
+</li>
+<li><p>然后就安装</p>
+<ul>
+<li>npm install -g hexo</li>
+</ul>
+</li>
+<li><p>hexo -g  hexo -d</p>
+</li>
+<li><p>用户名输入注册的</p>
+</li>
+<li><p>密码就在github主页 </p>
+<ul>
+<li>setting<ul>
+<li>Developer setting<ul>
+<li>perosonal access token</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>名字填blog 全部勾上 点Generate token</p>
+</li>
+<li><p>然后就可以复制粘贴到那个框框密码上就可以了</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="博客搭建完如何发布"><a href="#博客搭建完如何发布" class="headerlink" title="博客搭建完如何发布"></a>博客搭建完如何发布</h1><ul>
+<li>把写好的文章放在source\_posts里面</li>
+<li>hexo -s 是部署本地服务器</li>
+<li>hexo -g 是将本地的文章部署到本地服务器里面</li>
+<li>hexo -d 是将本地的文章部署到github网站服务器里面</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/02/11/blog(1)/" data-id="cl27mjjav0001sowa61pj10ap" data-title="寒假自学" class="article-share-link">Share</a>
       
       
       
@@ -255,6 +434,13 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></li></ul>
+    </div>
+  </div>
+
 
   
     
@@ -266,7 +452,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li></ul>
     </div>
   </div>
 
@@ -283,7 +469,11 @@
           </li>
         
           <li>
-            <a href="/2022/04/20/hello-world/">Hello World</a>
+            <a href="/2022/02/11/1/">寒假自学</a>
+          </li>
+        
+          <li>
+            <a href="/2022/02/11/blog(1)/">寒假自学</a>
           </li>
         
       </ul>
